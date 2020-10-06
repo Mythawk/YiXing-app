@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    >
+
+    <com.mythawk.yixing.widget.CnToolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@mipmap/icon_back_button"
+        />
+    
+    <FrameLayout
+        android:id="@+id/layoutImage"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            style="@style/personalLayout"
+            android:text="@string/my_img"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="45dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+            android:src="@drawable/default_head">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/icon_next"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutName"
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            style="@style/personalLayout"
+            android:text="@string/my_name"
+            />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="45dp"
+            android:text="@string/my_name"
+            android:textSize="24sp"
+            />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@mipmap/icon_next"
+            />
+        
+    </FrameLayout>
+
+   <LinearLayout
+       android:id="@+id/nameEdit"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/background"
+       android:visibility="gone"
+       >
+       
+       <EditText
+           android:id="@+id/editName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:textSize="24sp"
+           android:hint="@string/my_newName"
+           />
+
+       <Button
+           android:id="@+id/editBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="15dp"
+           android:layout_gravity="center_vertical"
+           android:layout_weight="1"
+           android:background="@color/background"
+           android:text="@string/my_ensure"
+           android:textSize="26sp"
+           />
+       
+   </LinearLayout>
+    
+</LinearLayout>

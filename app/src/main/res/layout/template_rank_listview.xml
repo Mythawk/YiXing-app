@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:paddingTop="5dp"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/rankNumb"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        style="@style/rank_txt"
+        android:layout_gravity="center"
+        android:text="@string/rankTop"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/rankImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/rankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/rank_txt"
+        android:layout_gravity="center"
+        android:text="@string/rankName"
+        />
+
+    <TextView
+        android:id="@+id/rankScout"
+        style="@style/rank_txt"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rankScout"
+        />
+
+</LinearLayout>

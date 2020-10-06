@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.mythawk.yixing.widget.CnToolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.mythawk.yixing.widget.CnToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/shoesPhoto"
+                    android:gravity="center_vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/shangji_6p"
+                    />
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/brandTxt"
+                        style="@style/shoes_txt"
+                        android:text="@string/brand"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/shoesBand"
+                        style="@style/shoes_txt"
+                        android:layout_toEndOf="@+id/brandTxt"
+                        android:textSize="18sp"
+                        android:text="@string/unknown"
+                        />
+
+                    <TextView
+                        android:id="@+id/nameTxt"
+                        style="@style/shoes_txt"
+                        android:text="@string/shoes_name"
+                        android:layout_below="@+id/brandTxt"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/shoesName"
+                        style="@style/shoes_txt"
+                        android:layout_toEndOf="@id/brandTxt"
+                        android:layout_below="@id/brandTxt"
+                        android:textSize="18sp"
+                        android:text="@string/unknown"
+                        />
+
+                    <TextView
+                        android:id="@+id/priceTxt"
+                        style="@style/shoes_txt"
+                        android:text="@string/shoes_price"
+                        android:layout_below="@+id/nameTxt"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/shoesPrice"
+                        style="@style/shoes_txt"
+                        android:layout_toEndOf="@id/priceTxt"
+                        android:layout_below="@+id/nameTxt"
+                        android:textSize="18sp"
+                        android:text="@string/unknown"
+                        />
+
+                    <TextView
+                        android:id="@+id/chooseText"
+                        style="@style/shoes_txt"
+                        android:layout_below="@+id/priceTxt"
+                        android:textSize="18sp"
+                        android:text="@string/choose"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/priceTxt"
+                        android:layout_toEndOf="@id/chooseText"
+                        android:entries="@array/size"
+                        android:prompt="@string/spinner_scout"
+                        android:padding="5dp"
+                        />
+
+                    <Button
+                        android:id="@+id/shoesBuy"
+                        android:layout_below="@+id/spinner"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:text="@string/now_buy"
+                        android:background="@color/buyButton"
+                        android:textSize="22sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/getSizeText"
+                        android:layout_height="wrap_content"
+                        style="@style/shoes_txt"
+                        android:layout_below="@+id/chooseText"
+                        android:layout_toEndOf="@+id/shoesBuy"
+                        android:textSize="14sp"
+                        android:text="@string/getSize"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="@string/score"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:contentPadding="3dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <RelativeLayout
+                            android:padding="5dp"
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/shockTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/shock"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/shock"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@+id/shockTxt"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                            <TextView
+                                android:id="@+id/parcelTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/parcel"
+                                android:layout_below="@+id/shockTxt"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/parcel"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@id/parcelTxt"
+                                android:layout_below="@id/shock"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                            <TextView
+                                android:id="@+id/supportTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/support"
+                                android:layout_below="@+id/parcelTxt"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/support"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@id/parcelTxt"
+                                android:layout_below="@+id/parcel"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:padding="5dp"
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/gripTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/grip"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/grip"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@+id/gripTxt"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                            <TextView
+                                android:id="@+id/durableTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/durable"
+                                android:layout_below="@+id/gripTxt"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/durable"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@id/gripTxt"
+                                android:layout_below="@id/grip"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                            <TextView
+                                android:id="@+id/averageTxt"
+                                style="@style/shoes_txt"
+                                android:text="@string/average"
+                                android:layout_below="@+id/durableTxt"
+                                android:textSize="20sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/average"
+                                style="@style/shoes_txt"
+                                android:layout_toEndOf="@id/averageTxt"
+                                android:layout_below="@+id/durable"
+                                android:textSize="18sp"
+                                android:text="@string/unknown"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sneaker_comment"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:id="@+id/no_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="@string/sneaker_noText"
+                    android:visibility="gone"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="500dp"
+                    android:visibility="gone"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.mythawk.yixing.widget.CnToolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/home_default_head"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="Default Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextClock
+                    android:id="@+id/txt_clock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="02-02"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/background"
+            app:contentPadding="3dp"
+            app:cardCornerRadius="3dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/title"
+                    android:textSize="24sp"
+                    />
+                <TextView
+                    android:id="@+id/share_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="24sp"
+                    />
+                <ImageView
+                    android:id="@+id/share_img"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:text="@string/score"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardBackgroundColor="@color/background"
+                app:contentPadding="3dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/shockTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/shock"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/shock"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@+id/shockTxt"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                        <TextView
+                            android:id="@+id/parcelTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/parcel"
+                            android:layout_below="@+id/shockTxt"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/parcel"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@id/parcelTxt"
+                            android:layout_below="@id/shock"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                        <TextView
+                            android:id="@+id/supportTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/support"
+                            android:layout_below="@+id/parcelTxt"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/support"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@id/parcelTxt"
+                            android:layout_below="@+id/parcel"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:padding="5dp"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/gripTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/grip"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/grip"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@+id/gripTxt"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                        <TextView
+                            android:id="@+id/durableTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/durable"
+                            android:layout_below="@+id/gripTxt"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/durable"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@id/gripTxt"
+                            android:layout_below="@id/grip"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                        <TextView
+                            android:id="@+id/averageTxt"
+                            style="@style/shoes_txt"
+                            android:text="@string/average"
+                            android:layout_below="@+id/durableTxt"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/average"
+                            style="@style/shoes_txt"
+                            android:layout_toEndOf="@id/averageTxt"
+                            android:layout_below="@+id/durable"
+                            android:textSize="18sp"
+                            android:text="@string/unknown"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/share_tips"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/share_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="24sp"
+                />
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

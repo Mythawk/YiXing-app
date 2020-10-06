@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">宜行</string>
+    <string name="home">主页</string>
+    <string name="category">分类</string>
+    <string name="rank">排行</string>
+    <string name="cart">购物车</string>
+    <string name="mine">我的</string>
+
+    <!-- 运动鞋详情页面文字 -->
+    <string name="brand">品牌：</string>
+    <string name="shoes_name">鞋名：</string>
+    <string name="shoes_price">价格：</string>
+    <string name="unknown">未知</string>
+    <string name="choose">选择鞋码：</string>
+    <string name="getSize">查看鞋码对照</string>
+    <string name="now_buy">立即购买</string>
+    <string name="score">详细评分：</string>
+    <string name="shock">缓震：</string>
+    <string name="parcel">包裹：</string>
+    <string name="support">支撑：</string>
+    <string name="grip">抓地：</string>
+    <string name="durable">耐久：</string>
+    <string name="average">总分：</string>
+
+    <!-- 排行页面的文字 -->
+    <string name="rankTop">排名</string>
+    <string name="rankName">鞋名</string>
+    <string name="rankScout">评分</string>
+
+    <!-- 我的页面文字-->
+    <string name="login">登录</string>
+    <string name="to_logout">退出登录</string>
+    <string name="to_login">点击登录</string>
+    <string name="token_error">登录失效，请重新登录</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_favorite">我的收藏</string>
+    <string name="my_info">个人资料</string>
+    <string name="my_addresses">收货地址</string>
+    <string name="my_personal">设置</string>
+    <string name="my_img">头像</string>
+    <string name="my_name">昵称</string>
+    <string name="my_newName">请输入新的昵称</string>
+    <string name="my_ensure">确  定</string>
+    <string name="my_person">个人资料</string>
+
+    <!-- 个人分享页面 -->
+    <string name="title">标题:</string>
+    <string name="share_tips">心得分享:</string>
+    <string name="share_top">发表分享</string>
+    <string name="share_title">标  题：</string>
+    <string name="share_share">内  容：</string>
+    <string name="share_sneaker">鞋  款：</string>
+    <string name="share_sendButton">发   表</string>
+    <string name="share_shock">缓震：</string>
+    <string name="share_parcel">包裹：</string>
+    <string name="share_support">支撑：</string>
+    <string name="share_grip">抓地：</string>
+    <string name="share_durable">耐久：</string>
+    <string name="share_chooseImg">请选择图片</string>
+    <string name="spinner_sneaker">请选择鞋款</string>
+    <string name="spinner_scout">请选择评分</string>
+
+    <!-- 登录页面-->
+    <string name="login_login">登录</string>
+    <string name="login_phone">请输入手机号码</string>
+    <string name="login_pwd">请输入登录密码</string>
+    <string name="login_registered">请输入验证码</string>
+    <string name="login_send">发送验证码</string>
+    <string name="login_logins">登  录</string>
+    <string name="login_registers">注  册</string>
+    <string name="login_forgets">找回密码</string>
+    <string name="login_registered_button">注册账号</string>
+    <string name="login_forget_button">忘记密码</string>
+    <string name="login_new_pwd">输入新密码</string>
+
+    <!-- 商品详情页面-->
+    <string name="sneaker_price">参考价格：</string>
+    <string name="sneaker_comment">用户分享:</string>
+    <string name="sneaker_noText">还没有用户分享!</string>
+
+    <!-- 购物车页面 -->
+    <string name="cart_all">全选</string>
+    <string name="cart_for">合计</string>
+    <string name="cart_buy">去结算</string>
+    <string name="cart_del">删除</string>
+
+    <!-- 留言页面 -->
+    <string name="com_tip">留 言</string>
+    <string name="com_mount">请填写内容</string>
+    <string name="com_submit">确定</string>
+
+    <!-- 地址管理 -->
+    <string name="address_tittle">我的收货地址</string>
+    <string name="address_new">添加</string>
+    <string name="address_manager">管理收货地址</string>
+    <string name="address_add">添加收货地址</string>
+    <string name="address_sure">确定</string>
+
+    <!-- 支付页面 -->
+    <string name="order_address">收货地址</string>
+    <string name="order_list">订单列表</string>
+    <string name="order_apply">使用支付宝支付</string>
+    <string name="order_wx">用微信支付，安全便捷</string>
+    <string name="order_size">请输入码数</string>
+    <string name="order_note">备注</string>
+    <string name="order_size_text">码数：</string>
+
+    <!-- 支付页面 -->
+    <string name="pay_buy">确认支付</string>
+    <string name="pay_back">取消支付</string>
+    <string name="pay_pay">正在使用</string>
+    <string name="pay_apply">支付宝支付</string>
+    <string name="pay_wx">微信支付</string>
+    <string name="pay_rmb">￥</string>
+
+    <!-- 订单页面 -->
+    <string name="myOrder_tittle">我的订单</string>
+    <string name="myOrder_add">所有订单</string>
+    <string name="myOrder_un_pay">未支付</string>
+    <string name="myOrder_pay">待发货</string>
+    <string name="myOrder_get">待收货</string>
+    <string name="myOrder_result">已完成</string>
+    <string name="myOrder_no_data">您还没有相关订单</string>
+
+
+</resources>

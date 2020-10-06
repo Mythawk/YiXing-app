@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:padding="5dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:id="@+id/drawee_view"
+        android:layout_alignParentLeft="true"
+        app:viewAspectRatio="1"
+
+        >
+    </com.facebook.drawee.view.SimpleDraweeView>
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/drawee_view">
+
+        <TextView
+            android:id="@+id/text_band"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:maxLines="3"
+
+            />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/drawee_view"
+        android:layout_below="@+id/top_layout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:text="@string/sneaker_price"
+            />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/firebrick"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

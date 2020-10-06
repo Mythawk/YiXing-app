@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShareActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/icon_back_button"
+        app:title="@string/share_top"
+        app:titleTextColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/topicText"
+                style="@style/addShare"
+                android:text="@string/share_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <EditText
+                android:id="@+id/topic"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/topicText"
+                android:textSize="20sp"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/shareText"
+                style="@style/addShare"
+                android:text="@string/share_share"
+                android:layout_below="@+id/topicText"
+                />
+
+            <EditText
+                android:id="@+id/share"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/shareText"
+                android:layout_below="@+id/topic"
+                android:maxLines="3"
+                android:textSize="24sp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sneakerText"
+                style="@style/addShare"
+                android:text="@string/share_sneaker"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerSneaker"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/sneakerText"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_sneaker"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/shockText"
+                style="@style/addShare"
+                android:text="@string/share_shock"
+                android:layout_below="@+id/sneakerText"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerShock"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/shockText"
+                android:layout_below="@+id/spinnerSneaker"
+                android:entries="@array/number"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_scout"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/parcelText"
+                style="@style/addShare"
+                android:text="@string/share_parcel"
+                android:layout_below="@+id/shockText"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerParcel"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/parcelText"
+                android:layout_below="@+id/spinnerShock"
+                android:entries="@array/number"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_scout"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/supportText"
+                style="@style/addShare"
+                android:text="@string/share_support"
+                android:layout_below="@+id/parcelText"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerSupport"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/supportText"
+                android:layout_below="@+id/spinnerParcel"
+                android:entries="@array/number"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_scout"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/gripText"
+                style="@style/addShare"
+                android:text="@string/share_grip"
+                android:layout_below="@+id/supportText"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerGrip"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/gripText"
+                android:layout_below="@+id/spinnerSupport"
+                android:entries="@array/number"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_scout"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/durableText"
+                style="@style/addShare"
+                android:text="@string/share_durable"
+                android:layout_below="@+id/gripText"
+                android:padding="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerDurable"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/durableText"
+                android:layout_below="@+id/spinnerGrip"
+                android:entries="@array/number"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_scout"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/imgBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/share_chooseImg"
+                android:textSize="26sp"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_sendButton"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
